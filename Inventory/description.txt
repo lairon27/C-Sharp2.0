@@ -1,0 +1,43 @@
+Develop an inventory management program for three types of equipment:
+
+·        Helmet
+
+·        Weapon
+
+·        Armor
+
+Each item has properties:
+
+·        Strength
+
+·        Agility
+
+·        Intelligence
+
+A soldier can have only one item of each type. The input data specifies the items at the warehouse cells and the items given to the soldier from the warehouse. There are two cases to handle:
+
+1.      If a soldier does not have an equipment of the given item’s type, he just takes the new item.
+
+2.      If a soldier has an equipment of the type of the given item, he takes the new item and returns his old item to the first empty cell of the warehouse.
+
+The program must output the total value of each property for all the items of a soldier.
+
+Input:
+
+1.      An array of integers,  where consecutive groups of four numbers describe inventory item in the warehouse cells:
+
+1.1   Type: absent (0), helmet (1), weapon (2), or armor (3).
+
+1.2   Strength.
+
+1.3   Agility.
+
+1.4   Intelligence.
+
+Note: The inventory order of the items in the warehouse cells is their arrival order.
+
+2.      Termination number -1.
+
+3.      An array of integers, where each number specifies the cell’s position in the inventory, from which an item is given to the soldier. Positions numbering starts from 1.
+
+4.      Termination number -1.
